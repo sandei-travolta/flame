@@ -1,0 +1,9 @@
+import 'package:flutter/material.dart';
+const color1=Color(0xFFe3ece1);
+const color2=Color(0xFFfce8cd);
+const color3=Color(0xFFece2fb);
+const navColor=Color(0xFFeef2f5);
+const textColor=Colors.black87;
+const containerColor=Color(0xFFecdfe8);
+const iconColor=Color(0xFF133942);
+const calenderColor=Colors.blueGrey;
