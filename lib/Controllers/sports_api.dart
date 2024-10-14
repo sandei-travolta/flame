@@ -1,10 +1,12 @@
 import 'package:flame/Controllers/Interfaces/sportapi_interface.dart';
+import 'package:flame/Services/sports_services.dart';
 
 class SportsApi implements SportsApiInterface{
+  SportsService sportsService=SportsService();
   @override
   void competionLogo() {
-    // TODO: implement fetchCompetionLogos
-
+    // TODO: implement fetchCompetionLog
+    sportsService.fetchLogo();
   }
 
   @override
