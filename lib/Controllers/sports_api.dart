@@ -5,13 +5,14 @@ class SportsApi implements SportsApiInterface{
   SportsService sportsService=SportsService();
   @override
   void competionLogo() {
-    // TODO: implement fetchCompetionLog
+
     sportsService.fetchLogo();
   }
 
   @override
   void fetchFixtures() {
     // TODO: implement fetchFixtures
+
   }
 
   @override
