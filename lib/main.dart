@@ -14,7 +14,6 @@ Future<void> main() async {
   await Hive.initFlutter();
   await Hive.openBox(constants.databaseName);
   await Hive.openBox(constants.categoriesDb);
-  print(constants.SPORTS_API_KEY);
   runApp(const MyApp());
 }
 
