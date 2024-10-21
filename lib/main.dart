@@ -8,12 +8,13 @@ import 'package:hive_flutter/adapters.dart';
 import 'utils/Constants.dart';
 
 Future<void> main() async {
-  Constants constants=Constants();
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
+  Constants constants=Constants();
   await Hive.initFlutter();
   await Hive.openBox(constants.databaseName);
   await Hive.openBox(constants.categoriesDb);
-  await dotenv.load(fileName: ".env");
+  print(constants.SPORTS_API_KEY);
   runApp(const MyApp());
 }
 

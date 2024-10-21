@@ -5,7 +5,6 @@ class SportsApi implements SportsApiInterface{
   SportsService sportsService=SportsService();
   @override
   void competionLogo() {
-
     sportsService.fetchLogo();
   }
 
